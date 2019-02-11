@@ -7,6 +7,11 @@
   border-bottom: 4px solid #6fcac1;
 }
 
+.mainmenu{
+  position:absolute;
+}
+
+
 .logo {
   width: 156px;
   height: 41px;
@@ -23,6 +28,10 @@
   margin-top: -21px;
 }
 
+.text-input-md {
+  margin:0;
+}
+
 .menu{    
   outline: none;
   display: inline-block;
@@ -30,6 +39,7 @@
   margin-left: 0px;
   padding: 13px 5px;
   float: right;
+  animation: fadeIn 2s;
 }
 
 .menu span {
@@ -58,4 +68,18 @@
 
 .header-md::after{
   background-image: none;
+}
+
+.tabsPositon {
+  top:80px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }

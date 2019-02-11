@@ -1,14 +1,25 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
+
+  <ion-navbar class="navbar">
+
+    <img class="logo">
+
+    <div class="menu">
+        <span >
+            MENU
+        </span>
+        <div  class="ico"></div>
+    </div>
+
   </ion-navbar>
+
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-tabs>
+    <ion-tab [root]="loMasVistoRoot" tabTitle="LO ÚLTIMO" tabIcon="information-circle"></ion-tab>
+    <ion-tab [root]="loUltimoRoot" tabTitle="LO MAS LEÍDO" tabIcon="information-circle"></ion-tab>
+</ion-tabs>
+
+<ion-content padding class="home">
 </ion-content>
+
