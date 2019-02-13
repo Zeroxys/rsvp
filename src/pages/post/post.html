@@ -1,0 +1,15 @@
+<ion-navbar>
+    <ion-title>postPage {{ data.title }}</ion-title>
+  </ion-navbar>
+
+<ion-header>
+</ion-header>
+
+<ion-content padding>
+  <img src="{{ data.images.principal[0].url }}">
+  <h3>{{data.title}}</h3>
+  <h4>Por {{ data.submitted.name }}</h4>
+
+  <div [innerHtml]="stringifyData"></div>
+
+</ion-content>

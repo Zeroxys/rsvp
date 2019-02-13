@@ -1,1 +1,21 @@
-<ion-nav [root]="rootPage"></ion-nav>
+<ion-menu [content]="mycontent" type="overlay">
+    <ion-content>
+      <ion-list>
+
+        <div>
+          <ion-input type="text" placeholder="¿QUE ESTÁS BUSCANDO?"></ion-input>
+          <ion-icon name="search"></ion-icon>
+        </div>
+
+        <ion-item><ion-icon name="home"></ion-icon>Inicio</ion-item>
+        <ion-item>Sociales</ion-item>
+        <ion-item>Moda</ion-item>
+        <ion-item>Lujo</ion-item>
+        <ion-item>Must</ion-item>
+        <ion-item>Perfiles</ion-item>
+        <ion-item>Suplementos</ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+
+<ion-nav #mycontent [root]="rootPage"></ion-nav>

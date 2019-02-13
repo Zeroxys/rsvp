@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController } from 'ionic-angular';
+import { IonicPage, NavController, MenuController } from 'ionic-angular';
 
 @IonicPage()
 
@@ -15,10 +15,12 @@ export class TabsPage {
   loUltimoRoot = 'LoUltimoPage'
 
 
-  constructor(public navCtrl: NavController) {}
+  constructor(public navCtrl: NavController, menu : MenuController) {
+    menu.enable(true, 'menu')
+  }
 
   testing(){
-    console.log('---> entro');
+    console.log('--->asd')
   }
 
 }
