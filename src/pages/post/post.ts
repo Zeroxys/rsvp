@@ -25,14 +25,12 @@ export class PostPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     let parser = new DOMParser();
-
+    
     this.data = this.navParams.get('data');
     this.body = parser.parseFromString(this.data.body, 'text/html');
     this.cleanBody = this.body.querySelector("body");
     
     this.stringifyData = String(this.cleanBody.outerHTML);
-
-    console.log(String(this.cleanBody.outerHTML));
 
   }
 
